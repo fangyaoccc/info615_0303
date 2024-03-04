@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everything you need to know about Glaucoma</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>window.alert("This website is to let people understand the glaucoma");</script>
+  </head>
+  <body>
+    <header>
+      <h1>Understanding Glaucoma</h1>
+    </header>
+    <main>
+      <section aria-labelledby="what-is-glaucoma">
+        <h1 id="what-is-glaucoma">Facts about glaucoma</h1>
+        <p>
+            Glaucoma is a series of eye diseases that can cause damage to the optic nerve, resulting in visual field defects and vision loss. The most common form is corner open glaucoma, followed by corner closure glaucoma.
+        </p>
+      </section>
+      <section aria-labelledby="recognizing-glaucoma">
+        <h2 id="recognizing-glaucoma">Recognizing Glaucoma</h2>
+        <ul>
+          <li>Severe eye pain</li>
+          <li>Nausea and vomiting</li>
+          <li>Blurred vision</li>
+          <li>Halos around lights</li>
+        </ul>
+      </section>
+      <section aria-labelledby="caring-for-glaucoma">
+        <h2 id="caring-for-glaucoma">Taking care for Glaucoma</h2>
+        <p>
+          <li>With a healthy lifestyle</li>
+          <li>Avoid fall and accident for some patient</li>
+          <li>Continue reading</li>
+          <li>Take medication</li>
+        </p>
+      </section>
+      <button onclick="toggleHighContrast()">Toggle High Contrast</button>
+      <script>
+        let highContrastEnabled = false;
+
+        function toggleHighContrast() {
+          if (highContrastEnabled) {
+            document.body.style.backgroundColor = "";
+            document.body.style.color = "";
+          } else {
+            document.body.style.backgroundColor = "rgba(255,255,128)";
+            document.body.style.color = "hsl(50, 33%, 25%)";
+          }
+          highContrastEnabled = !highContrastEnabled;
+        }
+      </script>
+      <button onclick="changeFontSize(-1)">A-</button>
+      <button onclick="changeFontSize(2)">A+</button>
+      <script>
+      function changeFontSize(direction) {
+          const currentSize = parseInt(window.getComputedStyle(document.body).fontSize);
+          document.body.style.fontSize = `${currentSize + direction}px`;
+      }
+      </script>
+    </main>
+    <footer>
+      <a href="https://en.wikipedia.org/wiki/Glaucoma">Click me for more information.</a>
+    </footer>
+  </body>
+</html>

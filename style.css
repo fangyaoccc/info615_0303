@@ -1,0 +1,36 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 50px; 
+    color: #ffffff;
+    background-color: #000000;
+    line-height: 1.4;
+}
+
+h1, h2 {
+    color: #ffcc00;
+}
+
+a {
+    color: #00ff00;
+}
+
+p, ul, li {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+header, main, footer {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+button {
+    padding: 10px 20px; 
+    font-size: 20px; 
+    margin: 5px; 
+    cursor: pointer; 
+}
